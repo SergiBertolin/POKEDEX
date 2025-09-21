@@ -35,19 +35,19 @@ En resumen: este proyecto es una muestra de cómo abordo el desarrollo de aplica
 
 # 🛠️ Tecnologías utilizadas
 
-React 18
+- React 18
 
-TypeScript
+- TypeScript
 
-Zustand
+- Zustand
 
-Zod
+- Zod
 
-React Router
+- React Router
 
-Vite
+- Vite
 
-Tailwind CSS
+- Tailwind CSS
 
 # ⚡ Demo en producción
 
