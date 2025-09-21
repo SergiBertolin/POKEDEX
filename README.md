@@ -1,50 +1,68 @@
-# React + TypeScript + Vite
+# 📱 Pokedex (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web que muestra información de Pokémon consumiendo una API externa, desarrollada con React, TypeScript y Vite.
+Este proyecto está enfocado en demostrar habilidades en consumo de APIs, tipado fuerte, arquitectura de componentes y diseño responsivo.
 
-Currently, two official plugins are available:
+# 🚀 Propósito del proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El propósito de este proyecto es servir como ejemplo profesional de una aplicación frontend completa que integra datos externos y aplica buenas prácticas de desarrollo moderno:
 
-## Expanding the ESLint configuration
+Consumo y validación de datos: integración con la PokeAPI, validando respuestas con Zod para garantizar integridad y seguridad en el tipado.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Gestión de estado global: implementación de Zustand, una librería ligera y escalable, en lugar de soluciones más pesadas como Redux.
 
-- Configure the top-level `parserOptions` property like this:
+Enrutamiento dinámico: uso de React Router para crear diferentes vistas (lista y detalles).
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Escalabilidad y mantenibilidad: arquitectura modular, tipado fuerte con TypeScript, y componentes reutilizables.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Entrega rápida: optimización con Vite y despliegue en Vercel para ofrecer una demo pública lista para revisar.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+En resumen: este proyecto es una muestra de cómo abordo el desarrollo de aplicaciones modernas, tipadas, mantenibles y listas para producción.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+# ✨ Funcionalidades
+
+🔍 Búsqueda de Pokémon por nombre o ID.
+
+📋 Listado dinámico de Pokémon con datos básicos.
+
+📖 Vista de detalles de cada Pokémon (imagen, estadísticas, tipos, etc.).
+
+✅ Validación de datos obtenidos de la API mediante Zod.
+
+📦 Gestión de estado con Zustand.
+
+🎨 Interfaz limpia y responsive.
+
+# 🛠️ Tecnologías utilizadas
+
+React 18
+
+TypeScript
+
+Zustand
+
+Zod
+
+React Router
+
+Vite
+
+Tailwind CSS
+
+# ⚡ Demo en producción
+
+👉 [Pokedex en Vercel](https://pokedex-fawn-eta.vercel.app)
+
+# 💡 Valor para empresas
+
+Este proyecto ejemplifica:
+
+Consumo e integración de APIs externas.
+
+Uso de TypeScript para asegurar calidad y escalabilidad.
+
+Arquitectura modular de componentes, orientada a proyectos mantenibles.
+
+Buenas prácticas en el diseño de interfaces responsivas.
+
+Es una muestra de mi capacidad para desarrollar aplicaciones funcionales, rápidas y escalables que integran datos en tiempo real.
